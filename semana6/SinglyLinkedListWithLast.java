@@ -34,6 +34,7 @@ public class SinglyLinkedListWithLast<T> {
          first = newNode;
       } else {
          last.setNext(newNode);
+         last = newNode;
       }
       size++;
    }
