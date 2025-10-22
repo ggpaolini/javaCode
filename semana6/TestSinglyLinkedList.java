@@ -7,24 +7,58 @@
 
 public class TestSinglyLinkedList {
    public static void main(String[] args) {
-
+      /*
+       * SinglyLinkedList<Integer> list = new SinglyLinkedList<>();
+       * SinglyLinkedList<Integer> vazio = list.copy();
+       * System.out.println(vazio);
+       * 
+       * for (int i = 1; i <= 5; i++) {
+       * list.addLast(i);
+       * }
+       * list.addLast(1);
+       * list.addLast(2);
+       * list.addLast(2);
+       * list.addLast(2);
+       * list.addLast(1);
+       * list.addLast(3);
+       * list.addLast(4);
+       * list.addLast(2);
+       * list.addLast(1);
+       * list.removeAll(1);
+       * System.out.println(list);
+       */
+      /*
+       * System.out.println(list.get(0));
+       * System.out.println(list.get(1));
+       * System.out.println(list.get(2));
+       * System.out.println(list.get(3));
+       * System.out.println(list.get(4));
+       * System.out.println(list.get(5));
+       * System.out.println(list.get(-1));
+       * System.out.println(list.get(6));
+       */
+      // System.out.println(list.size());
+      // System.out.println(list.get(3));
+      // System.out.println(list.remove(0));
+      // list.duplicate();
+      // System.out.println(list);
       // Criacao de lista de inteiros
       SinglyLinkedList<Pair> list = new SinglyLinkedList<Pair>();
-
-      // Escrevendo lista (no inicio esta vazia)
-      System.out.println(list);
-
-      // Verificando se esta vazia
-      System.out.println("isEmpty? " + list.isEmpty());
-
-      // Adicionando numeros de 1 a 5 ao final da lista
+      /*
+       * // Escrevendo lista (no inicio esta vazia)
+       * System.out.println(list);
+       * 
+       * // Verificando se esta vazia
+       * System.out.println("isEmpty? " + list.isEmpty());
+       */
       for (int i = 1; i <= 3; i++) {
          for (int j = 1; j <= 3; j++) {
             Pair p = new Pair(i, j);
             list.addLast(p);
          }
       }
-      System.out.println(list);
+      Pair p0 = new Pair(1, 2);
+      System.out.println(list.count(p0));
 
       /*
        * // Adicionando numeros de 6 a 10 ao inicio da lista
